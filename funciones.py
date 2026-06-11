@@ -15,7 +15,7 @@ estados_validos = ["Disponible", "Alquilado", "Reservado", "Discontinuado"]
 titulos_azar = ["Super Mario Bros Wonder", "The Legend of Zelda", "Jurassic Park", "Star Wars"]
 plataformas_azar = ["PlayStation 5", "Xbox Series X", "Nintendo Switch", "PC", "Blu-ray", "DVD"]
 
-
+# Autor principal: Agustina Maquieira
 def mostrar_menu():
     print("=" * 50)
     print("SISTEMA DE GESTIÓN: RETROPIXEL STORE")
@@ -26,14 +26,14 @@ def mostrar_menu():
     print("5. Salir")
     print("=" * 50)
 
-
+# Autor principal: Valentina Marfany
 def buscar_producto(titulo_buscado):
     i = 0
     while i < len(titulos) and titulos[i].lower() != titulo_buscado.lower():
         i = i + 1
     return i
 
-
+# Autor principal: Valentina Rodriguez
 def cargar_tipo():
     print("Tipo de contenido:")
     print("1. Película")
@@ -51,7 +51,7 @@ def cargar_tipo():
 
     return tipo
 
-
+# Autor principal: Valentina Rodriguez
 def cargar_categoria():
     i = 0
     while i < len(categorias_validas):
@@ -66,7 +66,7 @@ def cargar_categoria():
 
     return categorias_validas[opcion - 1]
 
-
+# Autor principal: Ainara Salvatierra
 def cargar_estado():
     i = 0
     while i < len(estados_validos):
@@ -81,7 +81,7 @@ def cargar_estado():
 
     return estados_validos[opcion - 1]
 
-
+# Autor principal: Valentina Marfany
 def registrar_manual():
     titulo = input("Ingrese título del producto: ")
 
@@ -119,7 +119,7 @@ def registrar_manual():
 
     print("Producto registrado correctamente.")
 
-
+# Autor principal: Valentina Marfany
 def registrar_automatico():
     titulo = random.choice(titulos_azar)
     tipo = random.choice(tipos_validos)
@@ -139,7 +139,7 @@ def registrar_automatico():
 
     print("Producto generado automáticamente.")
 
-
+# Autor principal: Agustina Maquieira
 def registrar_producto():
     cantidad = int(input("¿Cuántos productos desea registrar?: "))
 
@@ -161,7 +161,7 @@ def registrar_producto():
 
         i = i + 1
 
-
+# Autor principal: Ainara Salvatierra
 def eliminar_producto():
     if len(titulos) == 0:
         print("No hay productos cargados.")
@@ -189,7 +189,7 @@ def eliminar_producto():
             else:
                 print("Solo se puede eliminar si está Discontinuado y con stock cero.")
 
-
+# Autor principal: Valentina Rodriguez
 def modificar_producto():
     if len(titulos) == 0:
         print("No hay productos cargados.")
@@ -258,7 +258,7 @@ def modificar_producto():
                 else:
                     print("Opción inválida.")
 
-
+# Autor principal: Ainara Salvatierra
 def ordenar_por_stock_y_titulo():
     i = 0
     while i < len(titulos) - 1:
@@ -304,7 +304,7 @@ def ordenar_por_stock_y_titulo():
             j = j + 1
         i = i + 1
 
-
+# Autor principal: Agustina Maquieira
 def informe_general():
     if len(titulos) == 0:
         print("No hay productos cargados.")
