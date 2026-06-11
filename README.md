@@ -21,4 +21,4 @@ La primera versión del sistema tiene como objetivo:
 - Mantener una interacción simple, clara y continua para el usuario.
 
 # Repositorio
-- hay que poner el link -
+Link del Repositorio: https://github.com/Ainara5533/RETROPIXEL
